@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Perintah SQL dari kelompok DDL dan DML</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Tugas Database</h1>
+  <p>Perintah SQL Sesuai DDL Dan DML</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About me</h2>
+      <img src="saber.jpg" width="200" >
+      <p>Dandi Katerpilarifai</br>L200170168
+      </p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://github.com/L200170168" target="_blank">My Github</a>
+        </li>
+    </ul>
+     
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h1 align=center>Beberapa Perintah SQL Menurut Pengelompokannya</h1>
+      <img src="https://i1.wp.com/bornsql.ca/wp-content/uploads/2018/10/logo-sql-715x400.png?resize=715%2C400&ssl=1.png">
+      <br></br>
+      <h2>Perintah SQL Berdasarkan DDL</h2>
+      <p><strong>1. CREATE</strong></p>
+      <p>Perintah ini digunakan untuk membuat, termasuk diantaranya membuat database baru, tabel baru, viewbaru, dan kolom.
+        </br></br>Contoh:</br><strong>CREATE TABLE Barang( id_barang INTEGER PRIMARY KEY, nama_barang VARCHAR(225) NOT NULL, jumlah_barang VARCHAR(225) NOT NULL);</strong></p>
+      <p><strong>2. ALTER</strong></p>
+      <p>Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. Pekerjaannya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom.
+        </br></br>Contoh:</br><strong>Alter TABLE Barang ADD stok INTEGER;</strong></p>
+      <p><strong>3. RENAME</strong></p>
+      <p>Perintah yang digunakan untuk merubah nama Objek.
+        </br></br>Contoh:</br><strong>RENAME Pegawai to Karyawan;</strong></p>
+      <p><strong>4. DROOP</strong></p>
+      <p>Perintah ini digunakan untuk menghapus database dan tabel.
+        </br></br>Contoh:</br><strong>DROP TABLE Barang;</strong></p>
+      <h2>Perintah SQL Berdasarkan DML</h2>
+      <p><strong>1. UPDATE</strong></p>
+      <p>Perintah ini digunakan untuk memperbaharui data lama menjadi data terkini. Jika anda memiliki data yang salah atau kurang Up To Date dengan kondisi sekarang, maka dapat diubah isi datanya dengan menggunakan perintah UPDATE.
+        </br></br>Contoh:</br><strong>UPDATE Barang SET nama_barang = “Laptop” WHERE id_barang = 9901;</strong></p>
+      <p><strong>2. INSERT</strong></p>
+      <p>perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. Penggunaannya setelah database dan tabel selesai dibuat.
+        </br></br>Contoh:</br><strong>INSERT INTO Barang (id_barang,nama_barang,jumlah_barang) values(1556, “Komputer″, “12”,);</strong></p>
+      <p><strong>3. SELECT</strong></p>
+      <p>Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.
+        </br></br>Contoh:</br><strong>SELECT * FROM Barang;</strong></p>
+      <p><strong>4. DELETE</strong></p>
+      <p>Perintah ini digunakan untuk menghapus data dari tabel. Biasanya data yang dihapus adalah data yang tidak diperlukan lagi. Pada saat menghapus data, perintah yang telah dijalankan tidak dapat digagalkan, sehingga data yang telah hilang tidak dapat dikembalikan lagi.
+        </br></br>Contoh:</br><strong>DELETE FROM Barang WHERE id_barang=”5536”;</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Saber KyunKyun~</p>
+</div>
+
+</body>
+</html>
